@@ -9,15 +9,35 @@
 <body>
     <header>
     <h1>Welcome to my DOM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quisquam quas ut veniam velit vero veritatis incidunt accusantium laudantium ullam sit quasi fuga voluptas laboriosam, error, placeat magni dicta commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quisquam quas ut veniam velit vero veritatis incidunt accusantium laudantium ullam sit quasi fuga voluptas laboriosam, error, placeat magni dicta commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quisquam quas ut veniam velit vero veritatis incidunt accusantium laudantium ullam sit quasi fuga voluptas laboriosam, error, placeat magni dicta commodi.</p>
     </header>
     <main>
-        <h1>My Awesome Dom de re Baba</h1>
+        <section>
+            <h1>My Awesome Dom de re Baba</h1>
         <ul>
             <li>Jalali set</li>
             <li>Safayet</li>
             <li>Bonobas</li>
             <li>Sujauddoula</li>
         </ul>
+        </section>
+        <section class="Fruits-container">
+            <h1 id="Fruits-title">I am like this Fruits</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>  
+        <section>
+            <h1 id="Places-title">Places I Like To visit</h1>
+            <ul>
+                <li class="important-places">London</li>
+                <li class="important-places">Sundorbon</li>
+                <li class="important-places">Bandorbond</li>
+                <li>Shalbon</li>
+            </ul>
+        </section>
 
     </main>
     <script src="./js/dom.js"></script>
@@ -27,15 +47,25 @@
        const liCollection = document.getElementsByTagName('li');
        console.log(liCollection);
        for(const li of liCollection){
-        console.log(li.innerText);
+    
        }
        const headingCollection = document.getElementsByTagName('h1');
        console.log(headingCollection)
        for (const heading of headingCollection){
-        console.log(heading.innerText);
+    
        }
 
-    
+    // const places =document.getElementsByClassName('important-places')
+    // for (const place of places){
+    //     console.log(place.innerText);
+    // }
+
+    const places = document.getElementById('Places-title')
+    {
+        console.log(places.innerText);
+    }
+     const fruit = document.querySelectorAll('.Fruits-container');
+     console.log(fruit);
     </script>
 </body>
 </html>

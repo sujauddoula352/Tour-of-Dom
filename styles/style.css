@@ -1,3 +1,11 @@
 h1{
+    font-size: 2rem;
     color:aqua;
+}
+li{
+    font-size: 1.9;
+    color: brown;
+}
+.important-places{
+    color: blue;
 }
